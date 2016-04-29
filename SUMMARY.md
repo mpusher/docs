@@ -11,6 +11,5 @@
    * [解绑用户](chapter9.md)
    * [消息推送](chapter10.md)
    * [Http代理](chapter11.md)
-* 服务部署(chapter12.md)
-
+* [服务部署(chapter12.md)](chapter12.md)
 
