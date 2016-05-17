@@ -12,5 +12,5 @@
    * [消息推送](chapter10.md)
    * [Http代理](chapter11.md)
 * [服务部署](chapter12.md)
-* [开发指南](chapter13)
+* [开发指南](chapter13.md)
 
