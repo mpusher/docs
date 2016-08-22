@@ -8,7 +8,7 @@
 
 3. 安装```Redis``` (安装配置步骤略)
 
-4. 下载mpush server正式包[https://codeload.github.com/mpusher/mpush/tar.gz/0.0.1](https://codeload.github.com/mpusher/mpush/tar.gz/0.0.1)
+4. 下载mpush server正式包[https://github.com/mpusher/mpush/releases/download/0.0.1/mpush-release-0.0.1.tar.gz](https://github.com/mpusher/mpush/releases/download/0.0.1/mpush-release-0.0.1.tar.gz)
 
 5. 解压下载的tar包```tar -zvxf mpush-release-0.0.1.tar.gz``` 到 mpush 目录, 结构如下
 
@@ -27,10 +27,10 @@
    ```drwxrwxr-x 2 shinemo shinemo  4096 Aug 20 09:52 tmp``` 
 
 6. 修改 conf 目录下的 ```vi mpush.conf```文件, ```mpush.conf```里的配置项会覆盖同目录下的```reference.conf```文件
-	```java
+   ```java
       #主要修改以下配置
-      mp.zk.server-address="127.0.0.1:5666"//zk 机器的地址
-      mp.net.public-host-mapping={"172.17.42.1":"111.1.57.148"}//服务器内网地址和外网地址的映射
+      mp.net.connect-server-port=3000//长链接服务对外端口, 公网端口
+      mp.zk.server-address="127.0.0.1:2181"//zk 机器的地址
       mp.redis={//redis 相关配置
           #redis 集群配置，group 是个二维数组，第一层表示有多少组集群，每个集群下面可以有多台机器
           cluster-group:[
@@ -38,15 +38,14 @@
                   {
                       host:"127.0.0.1"
                       port:6379
-                      password:your redis password
+                      password:"your redis password"
                   }
               ]
           ]
       }
       //还有用于安全加密的RSA mp.security.private-key 和 mp.security.public-key 等...
-     
-    ```
- 如果要修改其他配置请参照reference.conf文件
+   ```
+    如果要修改其他配置请参照reference.conf文件
 
 7. 给bin目录下的脚本增加执行权限```chmod u+x *.sh```
 
