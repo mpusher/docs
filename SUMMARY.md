@@ -16,6 +16,8 @@
 * [配置详解](chapter14.md)
 * [Alloc实现](chapter17.md)
 * [Android SDK](chapter15.md)
+   * [SDK系统架构](chapter15.1.md)
+   * [MpushClient架构](chapter15.2.md)
 * [IOS SDK](chapter16.md)
 * [服务端SDK](chapter18.md)
 * [Http代理配置](chapter19.md)
