@@ -280,6 +280,116 @@
             
         </li>
     
+        <li class="chapter " data-level="1.8" data-path="chapter14.html">
+            
+                <a href="chapter14.html">
+            
+                    
+                    配置详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="chapter17.html">
+            
+                <a href="chapter17.html">
+            
+                    
+                    Alloc实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="chapter15.html">
+            
+                <a href="chapter15.html">
+            
+                    
+                    Android SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="chapter16.md">
+            
+                <span>
+            
+                    
+                    IOS SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="chapter18.md">
+            
+                <span>
+            
+                    
+                    服务端SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="chapter19.md">
+            
+                <span>
+            
+                    
+                    Http代理配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="chapter20.html">
+            
+                <a href="chapter20.html">
+            
+                    
+                    Server源码分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="chapter20.1.html">
+            
+                <a href="chapter20.1.html">
+            
+                    
+                    模块依赖关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -325,11 +435,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x7CFB;&#x7EDF;&#x67B6;&#x6784;">&#x7CFB;&#x7EDF;&#x67B6;&#x6784;</h1><p><img src="MPush&#x67B6;&#x6784;&#x56FE;.png"></p><footer class="page-footer"><span class="copyright">Copyright &#xA9; ohun.com 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-08-20 12:15:55
+                                <h1 id="&#x7CFB;&#x7EDF;&#x67B6;&#x6784;">&#x7CFB;&#x7EDF;&#x67B6;&#x6784;</h1><p><img src="MPush&#x67B6;&#x6784;&#x56FE;.png"></p><h2 id="&#x8BF4;&#x660E;">1. &#x8BF4;&#x660E;</h2><ol><li><p>&#x6700;&#x5DE6;&#x4FA7;&#x4E09;&#x5927;&#x7EC4;&#x4EF6;&#x5206;&#x522B;&#x662F;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x3001;&#x76D1;&#x63A7;&#x7CFB;&#x7EDF;&#x3001;&#x63A7;&#x5236;&#x53F0;&#x6CBB;&#x7406;&#x670D;&#x52A1;</p><ul><li>Log System &#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x4E1A;&#x52A1;&#x65E5;&#x5FD7;&#x5927;&#x8F93;&#x51FA;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x94FE;&#x63A5;&#x76F8;&#x5173;&#x65E5;&#x5FD7;&#x3001;&#x63A8;&#x9001;&#x94FE;&#x8DEF;&#x65E5;&#x5FD7;&#x3001;&#x5FC3;&#x8DF3;&#x65E5;&#x5FD7;&#x3001;&#x76D1;&#x63A7;&#x65E5;&#x5FD7;&#x7B49;
+</li>
+<li>Monitor &#x4E3B;&#x8981;&#x7528;&#x4F5C;&#x7CFB;&#x7EDF;&#x72B6;&#x6001;&#x76D1;&#x63A7;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x7CFB;&#x7EDF;&#x8C03;&#x4F18;&#xFF0C;&#x5305;&#x62EC;jvm&#x5185;&#x5B58;&#xFF0C;&#x7EBF;&#x7A0B;&#xFF0C;&#x7EBF;&#x7A0B;&#x6C60;&#xFF0C;&#x7CFB;&#x7EDF;&#x5806;&#x6808;&#xFF0C;&#x5783;&#x573E;&#x56DE;&#x6536;&#x60C5;&#x51B5;&#xFF0C;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#x60C5;&#x51B5;&#x7B49;&#x3002;
+</li>
+<li>AdminServer&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x5BF9;&#x5355;&#x53F0;&#x673A;&#x5668;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#x4E0E;&#x63A2;&#x67E5;&#xFF0C;&#x6BD4;&#x5982;&#x53C2;&#x770B;&#x8FDE;&#x63A5;&#x6570;&#x91CF;&#xFF0C;&#x5728;&#x7EBF;&#x7528;&#x6237;&#x6570;&#xFF0C;&#x53D6;&#x6D88;&#x672C;&#x7EA7;ZK&#x6CE8;&#x518C;&#xFF0C;&#x5173;&#x95ED;&#x670D;&#x52A1;&#x7B49;
+</li></ul>
+</li>
+<li><p>&#x53F3;&#x4FA7;&#x4E09;&#x4E2A;&#x5206;&#x522B;&#x662F;ZK&#x670D;&#x52A1;&#xFF0C;&#x914D;&#x7F6E;&#x4E2D;&#x5FC3;&#x548C;&#x5B89;&#x5168;&#x5DE5;&#x5177;&#x7BB1;</p><ul><li>ZK Client &#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x6CE8;&#x518C;&#x957F;&#x94FE;&#x63A5;ip:port,&#x7F51;&#x5173;ip:port&#x4EE5;&#x53CA;&#x76D1;&#x542C;&#x5404;&#x4E2A;&#x8282;&#x70B9;&#x53D8;&#x5316;&#xFF0C;&#x540C;&#x65F6;&#x589E;&#x52A0;&#x4E86;&#x7F13;&#x5B58;
+</li>
+<li>ConfigCenter &#x662F;MPUSH Server &#x914D;&#x7F6E;&#x5316;&#x7684;&#x5173;&#x952E;&#xFF0C;&#x8D2F;&#x7A7F;&#x5230;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x975E;&#x5E38;&#x91CD;&#x8981;
+</li>
+<li>Sercutity Box &#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x4E86;RSA&#x52A0;&#x5BC6;&#xFF0C;DES&#x52A0;&#x5BC6;&#xFF0C;&#x4F1A;&#x8BDD;&#x5BC6;&#x94A5;&#x751F;&#x6210;&#x53CA;Session&#x590D;&#x7528;(&#x7528;&#x4E8E;&#x5FEB;&#x901F;&#x91CD;&#x8FDE;)
+</li></ul>
+</li>
+<li><p>Core&#x6A21;&#x5757;&#x5206;&#x522B;&#x662F;&#x957F;&#x94FE;&#x63A5;&#x670D;&#x52A1;&#xFF0C;&#x7F51;&#x5173;&#x670D;&#x52A1;&#xFF0C;Packet&#x7F16;&#x89E3;&#x7801;&#x53CA;&#x5206;&#x53D1;&#x6A21;&#x5757;&#xFF0C;Message&#x5E8F;&#x5217;&#x5316;&#x53CA;&#x5904;&#x7406;&#x6A21;&#x5757;</p><ul><li>ConnectServer&#x7528;&#x4E8E;&#x7EF4;&#x6301;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x4E4B;&#x95F4;&#x7684;TCP&#x901A;&#x9053;&#xFF0C;&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x4EA4;&#x4E92;
+</li>
+<li>GatewayServer&#x7528;&#x4E8E;&#x5904;&#x7406;Mpush Server&#x4E4B;&#x95F4;&#x7684;&#x6D88;&#x606F;&#x4EA4;&#x4E92;&#x6BD4;&#x5982;&#x8E22;&#x4EBA;&#xFF0C;&#x53D1;&#x9001;PUSH
+</li>
+<li>Packet&#x4E3B;&#x8981;&#x662F;&#x534F;&#x8BAE;&#x90E8;&#x5206;&#x7684;&#x7F16;&#x89E3;&#x7801;&#x548C;&#x5305;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x6821;&#x9A8C;&#xFF0C;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x6821;&#x9A8C;&#x7B49;
+</li>
+<li>PacketReceiver&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x6D88;&#x606F;&#x7684;&#x5206;&#x53D1;&#xFF0C;&#x5206;&#x53D1;&#x662F;&#x6839;&#x636E;Command&#x6765;&#x7684;
+</li>
+<li>Connection/ConnectionManager&#x4E3B;&#x8981;&#x8D1F;&#x8D23;&#x94FE;&#x63A5;&#x7BA1;&#x7406;&#xFF0C;&#x5B9A;&#x65F6;&#x68C0;&#x67E5;&#x94FE;&#x63A5;&#x7A7A;&#x95F2;&#x60C5;&#x51B5;&#xFF0C;&#x662F;&#x5426;&#x8BFB;&#x5199;&#x8D85;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x94FE;&#x63A5;&#x65AD;&#x5F00;&#x53D1;&#x51FA;&#x76F8;&#x5E94;&#x7684;&#x4E8B;&#x4EF6;&#x7ED9;&#x8DEF;&#x7531;&#x4E2D;&#x5FC3;&#x53BB;&#x5904;&#x7406;
+</li>
+<li>Message&#x90E8;&#x5206;&#x662F;&#x6574;&#x4E2A;&#x7684;&#x4E1A;&#x52A1;&#x6838;&#x5FC3;&#x5904;&#x7406;&#x4E86;&#x5904;&#x7406;&#x6D88;&#x606F;&#x7684;&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x8FD8;&#x6709;&#x538B;&#x7F29;&#x3001;&#x52A0;&#x5BC6;&#x7B49;&#xFF0C;MessageHandler&#x4F1A;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x6D88;&#x606F;&#x72EC;&#x7ACB;&#x5904;&#x7406;&#x81EA;&#x5DF1;&#x6240;&#x5C5E;&#x7684;&#x4E1A;&#x52A1;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#xFF1A;&#x5FC3;&#x8DF3;&#x54CD;&#x5E94;&#x3001;&#x63E1;&#x624B;&#x53CA;&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x3001;&#x5FEB;&#x901F;&#x91CD;&#x8FDE;&#x3001;&#x7ED1;&#x5B9A;/&#x89E3;&#x7ED1;&#x7528;&#x6237;&#x3001;http&#x4EE3;&#x7406;&#x3001;&#x6D88;&#x606F;&#x63A8;&#x9001;&#x7B49;
+</li></ul>
+</li>
+<li><p>&#x8DEF;&#x7531;&#x4E2D;&#x5FC3;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#xFF1A;&#x672C;&#x5730;&#x8DEF;&#x7531;&#xFF0C;&#x8FDC;&#x7A0B;&#x8DEF;&#x7531;&#xFF0C;&#x7528;&#x6237;&#x5728;&#x7EBF;&#x7BA1;&#x7406;&#x4E09;&#x5927;&#x5757;</p><ul><li>LocalRouterManager&#x8D1F;&#x8D23;&#x7EF4;&#x62A4;&#x7528;&#x6237;&#xFF0B;&#x8BBE;&#x5907;&#x4E0E;&#x94FE;&#x63A5;(connection)&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;
+</li>
+<li>RemoteRouterManager&#x8D1F;&#x8D23;&#x7EF4;&#x62A4;&#x7528;&#x6237;&#xFF0B;&#x8BBE;&#x5907;&#x4E0E;&#x94FE;&#x63A5;&#x6240;&#x5728;&#x673A;&#x5668;IP&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;
+</li>
+<li>UserManager&#x4E3B;&#x8981;&#x5904;&#x7406;&#x7528;&#x6237;&#x4E0A;&#x4E0B;&#x7EBF;&#x4E8B;&#x4EF6;&#x7684;&#x5E7F;&#x64AD;&#xFF0C;&#x4EE5;&#x53CA;&#x5355;&#x53F0;&#x673A;&#x5668;&#x7684;&#x5728;&#x7EBF;&#x7528;&#x6237;&#x53CA;&#x6570;&#x91CF;&#x7684;&#x7EF4;&#x62A4;&#x548C;&#x67E5;&#x8BE2;
+</li></ul>
+</li>
+<li><p>&#x662F;MPUSH&#x7684;&#x7F13;&#x5B58;&#x90E8;&#x5206;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x652F;&#x6301;Redis,&#x652F;&#x6301;&#x53CC;&#x5199;&#xFF0C;&#x4E3B;&#x5907;&#xFF0C;hash &#x7B49;&#x7279;&#x6027;</p></li></ol>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; ohun.com 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2016-08-28 23:43:57
 </span></footer>
 
-
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#&#x7CFB;&#x7EDF;&#x67B6;&#x6784;">&#x7CFB;&#x7EDF;&#x67B6;&#x6784;</a></p><li><a href="#&#x8BF4;&#x660E;">1. &#x8BF4;&#x660E;</a></li></ul></div><a href="#&#x8BF4;&#x660E;" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -372,7 +517,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"系统架构","level":"1.2","depth":1,"next":{"title":"服务依赖关系","level":"1.3","depth":1,"path":"chapter2.md","ref":"chapter2.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","sharing","search","-highlight","-page-treeview","-anchorjs","baidu","donate","tbfed-pagefooter","navigator","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ohun.com 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"editlink":{"base":"http://gitlab.shinemo.com/ub/docs/tree/master/ub-api","label":"编辑本页"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"navigator":{},"baidu":{"token":"74e8d02bb383b3d88072165c31989fb2"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"icon":"#","placement":"right","visible":"always","class":"custom-class another-one"}},"theme":"default","author":"夜色","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MPUSH开发文档","language":"zh-hans","gitbook":"*","description":"mpush开发手册"},"file":{"path":"chapter1.md","mtime":"2016-08-20T04:15:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-23T09:45:43.327Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"系统架构","level":"1.2","depth":1,"next":{"title":"服务依赖关系","level":"1.3","depth":1,"path":"chapter2.md","ref":"chapter2.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","sharing","search","-highlight","-page-treeview","-anchorjs","baidu","donate","tbfed-pagefooter","navigator","-duoshuo","editlink","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ohun.com 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/mpusher/docs/tree/book"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"ohun","theme":"default"},"donate":{"alipay":"alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"navigator":{},"baidu":{"token":"74e8d02bb383b3d88072165c31989fb2"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"icon":"#","placement":"right","visible":"always","class":"custom-class another-one"}},"theme":"default","author":"夜色","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MPUSH开发文档","language":"zh-hans","gitbook":"*","description":"mpush开发手册"},"file":{"path":"chapter1.md","mtime":"2016-08-28T15:43:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T05:39:33.546Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -399,6 +544,10 @@
     
         
         <script src="gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-editlink/plugin.js"></script>
         
     
         

@@ -14,6 +14,8 @@
     "donate",
     "tbfed-pagefooter",
     "navigator",
+    "-duoshuo",
+    "editlink",
     "splitter"
   ],
   "pluginsConfig": {
@@ -22,8 +24,12 @@
       "family": "sans",
       "size": 2   
     },
+    "duoshuo": {
+      "short_name": "ohun",
+      "theme": "default"
+    },
     "editlink": {
-      "base": "http://gitlab.shinemo.com/ub/docs/tree/master/ub-api",
+      "base": "https://github.com/mpusher/docs/tree/book",
       "label": "编辑本页"
     },
     "anchorjs": {
