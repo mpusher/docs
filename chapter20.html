@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-hans" >
     <head>
-        <title>主要流程 · MPUSH开发文档</title>
+        <title>Server源码分析 · MPUSH开发文档</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chapter6.html" />
+    <link rel="next" href="chapter20.1.html" />
     
     
-    <link rel="prev" href="chapter3.html" />
+    <link rel="prev" href="chapter19.md" />
     
 
     </head>
@@ -157,7 +157,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="chapter4.html">
+        <li class="chapter " data-level="1.5" data-path="chapter4.html">
             
                 <a href="chapter4.html">
             
@@ -358,7 +358,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.14" data-path="chapter20.html">
+        <li class="chapter active" data-level="1.14" data-path="chapter20.html">
             
                 <a href="chapter20.html">
             
@@ -420,7 +420,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >主要流程</a>
+        <a href="." >Server源码分析</a>
     </h1>
 </div>
 
@@ -435,20 +435,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4E3B;&#x8981;&#x6D41;&#x7A0B;">&#x4E3B;&#x8981;&#x6D41;&#x7A0B;</h1><ul><li><a href="chapter6.html">&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x65B9;&#x6848;</a>
+                                <h1 id="Server&#x6E90;&#x7801;&#x5206;&#x6790;">Server&#x6E90;&#x7801;&#x5206;&#x6790;</h1><ul><li><a href="chapter20.1.html">&#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;</a>
 </li>
-<li><a href="chapter7.html">&#x63E1;&#x624B;&#x53CA;&#x5FEB;&#x901F;&#x91CD;&#x8FDE;</a>
-</li>
-<li><a href="chapter8.html">&#x7ED1;&#x5B9A;&#x7528;&#x6237;&#x53CA;&#x8DEF;&#x7531;&#x53D1;&#x5E03;</a>
-</li>
-<li><a href="chapter9.html">&#x89E3;&#x7ED1;&#x7528;&#x6237;</a>
-</li>
-<li><a href="chapter10.html">&#x6D88;&#x606F;&#x63A8;&#x9001;</a>
-</li>
-<li><a href="chapter11.html">Http&#x4EE3;&#x7406;</a> 
+<li><a href="chapter20.2.md">&#x542F;&#x52A8;&#x6D41;&#x7A0B;&#x5206;&#x6790;</a> 
 </li></ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; ohun.com 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-08-20 12:15:55
+2016-08-31 12:05:41
 </span></footer>
 
 
@@ -478,12 +470,12 @@
 
             
                 
-                <a href="chapter3.html" class="navigation navigation-prev " aria-label="Previous page: 协议">
+                <a href="chapter19.md" class="navigation navigation-prev " aria-label="Previous page: Http代理配置">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="chapter6.html" class="navigation navigation-next " aria-label="Next page: 密钥交换方案">
+                <a href="chapter20.1.html" class="navigation navigation-next " aria-label="Next page: 模块依赖关系">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -494,7 +486,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"主要流程","level":"1.5","depth":1,"next":{"title":"密钥交换方案","level":"1.5.1","depth":2,"path":"chapter6.md","ref":"chapter6.md","articles":[]},"previous":{"title":"协议","level":"1.4","depth":1,"path":"chapter3.md","ref":"chapter3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","sharing","search","-highlight","-page-treeview","-anchorjs","baidu","donate","tbfed-pagefooter","navigator","-duoshuo","editlink","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ohun.com 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/mpusher/docs/tree/book"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"ohun","theme":"default"},"donate":{"alipay":"alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"navigator":{},"baidu":{"token":"74e8d02bb383b3d88072165c31989fb2"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"icon":"#","placement":"right","visible":"always","class":"custom-class another-one"}},"theme":"default","author":"夜色","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MPUSH开发文档","language":"zh-hans","gitbook":"*","description":"mpush开发手册"},"file":{"path":"chapter4.md","mtime":"2016-08-20T04:15:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T05:04:29.818Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Server源码分析","level":"1.14","depth":1,"next":{"title":"模块依赖关系","level":"1.14.1","depth":2,"path":"chapter20.1.md","ref":"chapter20.1.md","articles":[]},"previous":{"title":"Http代理配置","level":"1.13","depth":1,"path":"chapter19.md","ref":"chapter19.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","sharing","search","-highlight","-page-treeview","-anchorjs","baidu","donate","tbfed-pagefooter","navigator","-duoshuo","editlink","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ohun.com 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/mpusher/docs/tree/book"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"ohun","theme":"default"},"donate":{"alipay":"alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"navigator":{},"baidu":{"token":"74e8d02bb383b3d88072165c31989fb2"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"icon":"#","placement":"right","visible":"always","class":"custom-class another-one"}},"theme":"default","author":"夜色","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MPUSH开发文档","language":"zh-hans","gitbook":"*","description":"mpush开发手册"},"file":{"path":"chapter20.md","mtime":"2016-08-31T04:05:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T05:04:29.818Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
