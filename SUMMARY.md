@@ -20,6 +20,6 @@
    * [MpushClient架构](chapter15.2.md)
 * [IOS SDK](chapter16.md)
 * [服务端SDK](chapter18.md)
-* [Http代理配置](chapter19.md)
+* [HTTP代理](chapter19.md)
 * [Server源码分析](chapter20.md)
    * [模块依赖关系](chapter20.1.md)
