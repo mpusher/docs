@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="zh-hans" >
     <head>
-        <title>4.主要流程 · MPUSH开发文档</title>
+        <title>14.SPI定制化 · MPUSH开发文档</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -73,10 +73,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="chapter6.html" />
     
-    
-    <link rel="prev" href="chapter3.html" />
+    <link rel="prev" href="chapter20.1.html" />
     
 
     </head>
@@ -157,7 +155,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="chapter4.html">
+        <li class="chapter " data-level="1.5" data-path="chapter4.html">
             
                 <a href="chapter4.html">
             
@@ -422,7 +420,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="chapter21.html">
+        <li class="chapter active" data-level="1.15" data-path="chapter21.html">
             
                 <a href="chapter21.html">
             
@@ -465,7 +463,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >4.主要流程</a>
+        <a href="." >14.SPI定制化</a>
     </h1>
 </div>
 
@@ -480,23 +478,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4E3B;&#x8981;&#x6D41;&#x7A0B;">&#x4E3B;&#x8981;&#x6D41;&#x7A0B;</h1><ul><li><a href="chapter6.html">&#x5BC6;&#x94A5;&#x4EA4;&#x6362;&#x65B9;&#x6848;</a>
+                                <h1 id="SPI&#x5B9A;&#x5236;&#x5316;">SPI&#x5B9A;&#x5236;&#x5316;</h1><h2 id="&#x4EC0;&#x4E48;&#x662F;SPI">1. &#x4EC0;&#x4E48;&#x662F;SPI</h2><p>&#x5EFA;&#x8BAE;&#x76F4;&#x63A5;&#x767E;&#x5EA6; <code>java spi</code>, &#x5B98;&#x65B9;&#x4ECB;&#x7ECD;: <a href="http://docs.oracle.com/javase/tutorial/sound/SPI-intro.html" target="_blank">http://docs.oracle.com/javase/tutorial/sound/SPI-intro.html</a></p><h2 id="mpush_&#x4F7F;&#x7528;SPI&#x7684;&#x76EE;&#x7684;">2. mpush &#x4F7F;&#x7528;SPI&#x7684;&#x76EE;&#x7684;</h2><p>&#x80AF;&#x5B9A;&#x662F;&#x4E3A;&#x4E86;&#x6269;&#x5C55;&#x6027;&#xFF0C;&#x5728;&#x4E0D;&#x60F3;&#x4FEE;&#x6539;&#x6E90;&#x7801;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53BB;&#x66FF;&#x6362;&#x7CFB;&#x7EDF;&#x539F;&#x6709;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4EE3;&#x4EF7;&#x6700;&#x5C0F;&#x4E5F;&#x6700;&#x7075;&#x6D3B;&#x3002;</p><h2 id="mpush&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;SPI&#x5217;&#x8868;">3. mpush&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;SPI&#x5217;&#x8868;</h2><p><strong>&#x6240;&#x6709;&#x53D7;&#x652F;&#x6301;&#x7684;SPI&#x90FD;&#x5728;<code>mpuhs-api</code>&#x6A21;&#x5757;&#x7684;<code>com.mpush.api.spi</code>&#x5305;&#x4E0B;&#x9762;&#x3002;</strong></p><ul><li><code>ServerEventListenerFactory</code> &#x76D1;&#x542C;Server &#x4EA7;&#x751F;&#x7684;&#x76F8;&#x5173;&#x4E8B;&#x4EF6;
 </li>
-<li><a href="chapter7.html">&#x63E1;&#x624B;&#x53CA;&#x5FEB;&#x901F;&#x91CD;&#x8FDE;</a>
+<li><code>BindValidatorFactory</code> &#x7ED1;&#x5B9A;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x662F;&#x6821;&#x9A8C;&#x7528;&#x6237;&#x8EAB;&#x4EFD;&#x662F;&#x5426;&#x5408;&#x6CD5;
 </li>
-<li><a href="chapter8.html">&#x7ED1;&#x5B9A;&#x7528;&#x6237;&#x53CA;&#x8DEF;&#x7531;&#x53D1;&#x5E03;</a>
+<li><code>ClientClassifierFactory</code> &#x540C;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x591A;&#x8BBE;&#x5907;&#x767B;&#x5F55;&#x4E92;&#x8E22;&#x7B56;&#x7565;&#xFF0C;&#x9ED8;&#x8BA4;Android&#x548C;ios&#x4F1A;&#x4E92;&#x8E22;
 </li>
-<li><a href="chapter9.html">&#x89E3;&#x7ED1;&#x7528;&#x6237;</a>
+<li><code>PushHandlerFactory</code> &#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x4E0A;&#x884C;&#x63A8;&#x9001;&#x6D88;&#x606F;
 </li>
-<li><a href="chapter10.html">&#x6D88;&#x606F;&#x63A8;&#x9001;</a>
+<li><code>ExecutorFactory</code> &#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x7EBF;&#x7A0B;&#x6C60;&#x5DE5;&#x5382;&#xFF0C;&#x53EF;&#x4EE5;&#x6309;&#x81EA;&#x5DF1;&#x7684;&#x7B56;&#x7565;&#x521B;&#x5EFA;&#x7EBF;&#x7A0B;&#x6C60;
+</li></ul>
+<h2 id="&#x5F00;&#x53D1;&#x6D41;&#x7A0B;">4. &#x5F00;&#x53D1;&#x6D41;&#x7A0B;</h2><ul><li>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;maven&#x5DE5;&#x7A0B;&#xFF0C;&#x5E76;&#x52A0;&#x5165;mpush-api&#x6A21;&#x5757;&#x7684;&#x4F9D;&#x8D56;
 </li>
-<li><a href="chapter11.html">Http&#x4EE3;&#x7406;</a> 
+<li>&#x5B9E;&#x73B0;&#x8981;&#x5B9A;&#x5236;&#x7684;&#x63A5;&#x53E3;&#x548C;&#x5176;&#x5BF9;&#x5E94;&#x7684;Factory
+</li>
+<li>&#x5728;resources&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;META-INF.services&#x76EE;&#x5F55;
+</li>
+<li>&#x521B;&#x5EFA;&#x540D;&#x5B57;&#x4E3A;<code>com.mpush.api.spi.xxx.XXXFactory</code>&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x5BF9;&#x5E94;&#x7684;&#x63A5;&#x53E3;&#x540D;
+</li>
+<li>&#x6587;&#x4EF6;&#x7684;&#x5185;&#x5BB9;&#x4E3A;&#x5B9E;&#x73B0;&#x7C7B;&#x7684;&#x5168;&#x540D;(packageName+className)
+</li>
+<li>&#x901A;&#x8FC7;mvn&#x6253;&#x6210;jar&#x5305;&#xFF0C;&#x5E76;&#x628A;&#x5176;&#x653E;&#x5230;mpush/lib&#x76EE;&#x5F55;
+</li>
+<li>&#x91CD;&#x542F;mpush server &#x5C31;&#x4F1A;&#x4F18;&#x5148;&#x52A0;&#x8F7D;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x5B9E;&#x73B0;&#x6765;&#x8986;&#x76D6;&#x539F;&#x6709;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0; 
 </li></ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; ohun.com 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-08-20 12:15:55
+2016-10-27 00:12:08
 </span></footer>
 
-
+<div id="anchors-navbar"><i class="fa fa-anchor"></i><ul><p><a href="#SPI&#x5B9A;&#x5236;&#x5316;">SPI&#x5B9A;&#x5236;&#x5316;</a></p><li><a href="#&#x4EC0;&#x4E48;&#x662F;SPI">1. &#x4EC0;&#x4E48;&#x662F;SPI</a></li><li><a href="#mpush_&#x4F7F;&#x7528;SPI&#x7684;&#x76EE;&#x7684;">2. mpush &#x4F7F;&#x7528;SPI&#x7684;&#x76EE;&#x7684;</a></li><li><a href="#mpush&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;SPI&#x5217;&#x8868;">3. mpush&#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;SPI&#x5217;&#x8868;</a></li><li><a href="#&#x5F00;&#x53D1;&#x6D41;&#x7A0B;">4. &#x5F00;&#x53D1;&#x6D41;&#x7A0B;</a></li></ul></div><a href="#&#x4EC0;&#x4E48;&#x662F;SPI" id="goTop"><i class="fa fa-arrow-up"></i></a>
                                 
                                 </section>
                             
@@ -523,14 +533,10 @@
 
             
                 
-                <a href="chapter3.html" class="navigation navigation-prev " aria-label="Previous page: 3.协议">
+                <a href="chapter20.1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 13.1.模块依赖关系">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="chapter6.html" class="navigation navigation-next " aria-label="Next page: 4.1.密钥交换方案">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -539,7 +545,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.主要流程","level":"1.5","depth":1,"next":{"title":"4.1.密钥交换方案","level":"1.5.1","depth":2,"path":"chapter6.md","ref":"chapter6.md","articles":[]},"previous":{"title":"3.协议","level":"1.4","depth":1,"path":"chapter3.md","ref":"chapter3.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","sharing","search","-highlight","-page-treeview","-anchorjs","baidu","donate","tbfed-pagefooter","navigator","duoshuo","editlink","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ohun.com 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/mpusher/docs/tree/book"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"mpush","theme":"default"},"donate":{"alipay":"alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"navigator":{},"baidu":{"token":"74e8d02bb383b3d88072165c31989fb2"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"icon":"#","placement":"right","visible":"always","class":"custom-class another-one"}},"theme":"default","author":"夜色","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MPUSH开发文档","language":"zh-hans","gitbook":"*","description":"mpush开发手册"},"file":{"path":"chapter4.md","mtime":"2016-08-20T04:15:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-26T16:14:58.733Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"14.SPI定制化","level":"1.15","depth":1,"previous":{"title":"13.1.模块依赖关系","level":"1.14.1","depth":2,"path":"chapter20.1.md","ref":"chapter20.1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","sharing","search","-highlight","-page-treeview","-anchorjs","baidu","donate","tbfed-pagefooter","navigator","duoshuo","editlink","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy ohun.com 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{},"editlink":{"label":"编辑本页","multilingual":false,"base":"https://github.com/mpusher/docs/tree/book"},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"mpush","theme":"default"},"donate":{"alipay":"alipay.jpg","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"wxpay.png","wechatText":"微信打赏"},"fontsettings":{"theme":"sepia","family":"sans","size":2},"navigator":{},"baidu":{"token":"74e8d02bb383b3d88072165c31989fb2"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{"icon":"#","placement":"right","visible":"always","class":"custom-class another-one"}},"theme":"default","author":"夜色","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MPUSH开发文档","language":"zh-hans","gitbook":"*","description":"mpush开发手册"},"file":{"path":"chapter21.md","mtime":"2016-10-26T16:12:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-10-26T16:14:58.733Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
